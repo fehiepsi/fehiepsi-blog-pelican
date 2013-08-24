@@ -4,6 +4,8 @@ comments: true
 slug: migrating-from-octopress-to-pelican
 
 <!-- PELICAN_BEGIN_SUMMARY -->
+by **http://jakevdp.github.io/**
+
 After nine months on Octopress, I've decided to move on.
 
 I should start by saying that Octopress is a great platform for static
