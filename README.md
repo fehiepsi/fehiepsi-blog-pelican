@@ -1,2 +1,0 @@
-pelican-fehiepsi-blog
-=====================

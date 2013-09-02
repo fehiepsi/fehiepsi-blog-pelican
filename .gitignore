@@ -1,4 +1,5 @@
-output/
-*.pyc
-*.pid
 *~
+*.pid
+*.pyc
+output/
+_nb_header.html
