@@ -59,11 +59,6 @@ def publish():
         delete=True
     )
 
-import logging
-import shutil
-
-logger = logging.getLogger(__name__)
-
 DEPLOY_REPOSITORY = 'fehiepsi.github.io'
 REL_DEPLOY_PATH = '../{0}'.format(DEPLOY_REPOSITORY)
 
