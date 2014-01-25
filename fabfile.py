@@ -18,8 +18,10 @@ env.cloudfiles_container = 'my_cloudfiles_container'
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):
-        # local('rm -rf {deploy_path}'.format(**env))
-        local('rmdir /s /q {deploy_path}'.format(**env))
+        if os.name == 'nt':
+            local('rmdir /s /q {deploy_path}'.format(**env))
+        else:
+            local('rm -rf {deploy_path}'.format(**env))
         local('mkdir {deploy_path}'.format(**env))
 
 def build():

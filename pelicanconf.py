@@ -64,9 +64,6 @@ PLUGINS = ['summary', 'liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.include_code', 'liquid_tags.notebook',
            'liquid_tags.literal']
 
-CODE_DIR = 'downloads/code'
-NOTEBOOK_DIR = 'downloads/notebooks'
-
 # The theme file should be updated so that the base header contains the line:
 #
 #  {% if EXTRA_HEADER %}
