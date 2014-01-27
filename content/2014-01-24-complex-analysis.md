@@ -1,7 +1,7 @@
-Title: Solutions to Rudin, Real and Complex Analysis
+Title: Solutions to Rudin's Real and Complex Analysis
 Date: 2014-01-24 17:21
 Slug: complex-analysis
 
-This is my solution:
+{% notebook complex-analysis.ipynb cells[:2] %}
 <!-- PELICAN_END_SUMMARY -->
-{% notebook complex-analysis.ipynb %}
+{% notebook complex-analysis.ipynb cells[2:] %}

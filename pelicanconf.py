@@ -7,6 +7,8 @@ AUTHOR = u'fehiepsi'
 SITENAME = u"fehiepsi's blog"
 SITEURL = ''
 
+PATH = 'content'
+
 TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = u'en'
@@ -19,8 +21,8 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 LINKS = (('bình yên', 'http://binhyen.livejournal.com/'), 
     	 ('What\'s new', 'http://terrytao.wordpress.com/'), 
-    	 ('Zen Habits', 'http://zenhabits.net/'), 
-    	 ('A Quiet Place', 'http://genhara-chan.tumblr.com/'),)
+    	 ('zenhabits', 'http://zenhabits.net/'), 
+    	 ('~A Quiet Place~', 'http://genhara-chan.tumblr.com/'),)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
@@ -29,7 +31,7 @@ LINKS = (('bình yên', 'http://binhyen.livejournal.com/'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 SITESUBTITLE = "enjoy freedom"
 
@@ -86,6 +88,9 @@ TWITTER_FOLLOW_BUTTON = True
 # RSS/Atom feeds
 FEED_ATOM = 'atom.xml'
 
+# Search
+SEARCH_BOX = True
+
 # Not make 'content' as a category and disable categories on menu
 USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -95,5 +100,5 @@ SIDEBAR_IMAGE = 'images/gravatar.jpg'
 SIDEBAR_IMAGE_ALT = 'my avatar'
 SIDEBAR_IMAGE_WIDTH = 200
 
-# Fix fabfile.py not run a full command
-PATH = 'content'
+# Add typographical improvements
+TYPOGRIFY = True
