@@ -4,4 +4,4 @@ Slug: complex-analysis
 
 This is my solution:
 <!-- PELICAN_END_SUMMARY -->
-{% notebook complex-analysis.ipynb cells[2:] %}
+{% notebook complex-analysis.ipynb %}

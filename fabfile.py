@@ -49,7 +49,8 @@ def cf_upload():
     local('cd {deploy_path} && '
           'swift -v -A https://auth.api.rackspacecloud.com/v1.0 '
           '-U {cloudfiles_username} '
-          '-K {cloudfiles_api_key} '          'upload -c {cloudfiles_container} .'.format(**env))
+          '-K {cloudfiles_api_key} '
+          'upload -c {cloudfiles_container} .'.format(**env))
 
 @hosts(production)
 def publish():

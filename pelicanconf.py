@@ -1,13 +1,12 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-
 import os
 
 AUTHOR = u'fehiepsi'
 SITENAME = u"fehiepsi's blog"
 SITEURL = ''
 
-# TIMEZONE = 'Europe/Paris'
 TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = u'en'
@@ -18,14 +17,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-# LINKS =  (('Pelican', 'http://getpelican.com/'),
-#           ('Python.org', 'http://python.org/'),
-#           ('Jinja2', 'http://jinja.pocoo.org/'),
-#           ('You can modify those links in your config file', '#'),)
-LINKS =  (('binh yen', 'http://binhyen.livejournal.com/'),
-          ('What\'s new', 'http://terrytao.wordpress.com/'),
-          ('Zen Habits', 'http://zenhabits.net/'),
-          ('A Quiet Place', 'http://genhara-chan.tumblr.com/'),)
+LINKS = (('bình yên', 'http://binhyen.livejournal.com/'), 
+    	 ('What\'s new', 'http://terrytao.wordpress.com/'), 
+    	 ('Zen Habits', 'http://zenhabits.net/'), 
+    	 ('A Quiet Place', 'http://genhara-chan.tumblr.com/'),)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
@@ -36,12 +31,17 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+SITESUBTITLE = "enjoy freedom"
+
+# Times and dates
+DEFAULT_DATE_FORMAT = '%b %d, %Y'
+
 # Set the article URL
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 # Title menu options
-MENUITEMS = [('Archives', '/archives.html')]
+MENUITEMS = [('Blog', '/'), ('Archives', '/archives.html')]
 
 # Github include settings
 GITHUB_USER = 'fehiepsi'
@@ -50,7 +50,7 @@ GITHUB_SKIP_FORK = True
 GITHUB_SHOW_USER_LINK = True
 
 # This requires Pelican 3.3+
-STATIC_PATHS = ['images', 'figures', 'downloads', 'favicon.png']
+STATIC_PATHS = ['images', 'downloads', 'favicon.png']
 
 CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
@@ -82,11 +82,18 @@ else:
 TWITTER_USER = 'fehiepsi'
 TWITTER_TWEET_BUTTON = True
 TWITTER_FOLLOW_BUTTON = True
-TWITTER_TWEET_COUNT = 3
-TWITTER_SHOW_REPLIES = 'false'
-TWITTER_SHOW_FOLLOWER_COUNT = 'true'
 
 # RSS/Atom feeds
 FEED_ATOM = 'atom.xml'
 
-READERS = {'html': None}
+# Not make 'content' as a category and disable categories on menu
+USE_FOLDER_AS_CATEGORY = False
+DISPLAY_CATEGORIES_ON_MENU = False
+
+# Add side bar image
+SIDEBAR_IMAGE = 'images/gravatar.jpg'
+SIDEBAR_IMAGE_ALT = 'my avatar'
+SIDEBAR_IMAGE_WIDTH = 200
+
+# Fix fabfile.py not run a full command
+PATH = 'content'
