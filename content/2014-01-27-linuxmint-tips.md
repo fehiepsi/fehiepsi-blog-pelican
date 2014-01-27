@@ -1,4 +1,4 @@
-Title: Tips for Using Linux Mint
+Title: Tips for using Linux Mint
 Date: 2014-01-27 21:01
 Slug: linuxmint-tips
 
